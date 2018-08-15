@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4245f4</color>
+    <color name="colorPrimaryDark">#194769</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorRed">#cf1b1b</color>
+    <color name="colorTouch">#e8e9ea</color>
+    <color name="colorTouchAddIncome">#40ba30</color>
+    <color name="colorDefTouchAddIncome">#32a32a</color>
+    <color name="colorTouchAddExpense">#c63131</color>
+    <color name="colorDefTouchAddExpense">#d13636</color>
+</resources>

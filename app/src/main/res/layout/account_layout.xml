@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_account"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_marginTop="16dp"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#5b5656"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:textStyle="bold"
+            android:layout_gravity="center|start" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/income"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewAmountIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KHR 2,000.00"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#2ad617"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expense"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KHR 5,00.00"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#d62424"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#5b5656"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/savings"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:textStyle="bold"
+                android:textColor="#2ad617"/>
+
+            <TextView
+                android:id="@+id/textViewSaving"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KHR 1,500.00"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#2ad617"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnAddIncome"
+                style="@style/AddIncomeStyle"/>
+
+            <View
+                android:layout_width="55dp"
+                android:layout_height="1dp"
+                android:background="#cfd2d6"
+                android:layout_gravity="center"
+                android:rotation="90"
+                android:layout_marginTop="16dp"/>
+
+            <Button
+                android:id="@+id/btnAddExpense"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/add_expense_touchselector"
+                android:text="@string/add_expense"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:layout_gravity="end"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</layout>

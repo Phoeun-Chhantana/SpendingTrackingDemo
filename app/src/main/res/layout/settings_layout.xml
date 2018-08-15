@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:gravity="center"
+            android:textAlignment="center"
+            style="@style/TextAppearance.AppCompat.Title" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage"
+        android:layout_marginTop="16dp"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="16sp"
+        android:background="#d7d9dd"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewAddInCate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_touchselector"
+        android:text="Income Category"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingStart="16dp"
+        android:textSize="16sp"
+        style="@style/TextAppearance.AppCompat.Body2" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#e2e0e0"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewAddInEx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_touchselector"
+        android:text="Expense Category"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingStart="16dp"
+        android:textSize="16sp"
+        style="@style/TextAppearance.AppCompat.Body2" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#e2e0e0"
+        android:layout_marginStart="16dp"/>
+
+</LinearLayout>

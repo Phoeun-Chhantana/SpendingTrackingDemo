@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBarAddIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_income"
+                android:textAlignment="center"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_marginEnd="16dp"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#5b5656" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount :"
+                android:layout_gravity="center|start"
+                android:textAlignment="center"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/editTextAmountIn"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|end"
+                android:inputType="number"
+                android:paddingStart="6dp" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#5b5656"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name :"
+                android:layout_gravity="center|start"
+                android:textAlignment="center"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/editTextNameIn"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|end"
+                android:inputType="textVisiblePassword"
+                android:paddingStart="6dp"/>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#5b5656"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category :"
+                android:layout_gravity="center|start"
+                android:textAlignment="center"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"/>
+
+            <!--<TextView
+                android:id="@+id/textViewCateAddIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="General"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp" />-->
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinnerCateIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/category_income"
+                android:layout_gravity="center">
+
+            </android.support.v7.widget.AppCompatSpinner>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#5b5656"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date :"
+                android:layout_gravity="center|start"
+                android:textAlignment="center"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/textViewDateIncome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aug 02, 2018"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"
+                android:layout_marginStart="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_right_arrow"
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="center|end"/>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#5b5656"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note :"
+                android:layout_gravity="center|start"
+                android:textAlignment="center"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/editTextNoteIn"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|end"
+                android:inputType="textVisiblePassword"
+                android:paddingStart="6dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</layout>

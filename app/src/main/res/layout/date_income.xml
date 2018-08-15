@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarDateIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textViewDisplayDateIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aug 02, 2018"
+        android:layout_marginStart="16dp"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="16sp"/>
+
+    <DatePicker
+        android:id="@+id/datePickerIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_gravity="center">
+
+    </DatePicker>
+
+</LinearLayout>

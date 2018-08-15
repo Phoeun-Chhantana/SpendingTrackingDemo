@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs xmlns:android="http://schemas.android.com/apk/res/android">
+    <tab
+        id="tab_account"
+        title="Account"
+        icon="@drawable/ic_wallet_filled_money_tool">
+    </tab>
+    <tab
+        id="tab_report"
+        title="Report"
+        icon="@drawable/ic_newspaper">
+    </tab>
+    <tab
+        id="tab_search"
+        title="Search"
+        icon="@drawable/ic_baseline_search_24px">
+    </tab>
+    <tab
+        id="tab_settings"
+        title="Settings"
+        icon="@drawable/ic_settings">
+    </tab>
+</tabs>
